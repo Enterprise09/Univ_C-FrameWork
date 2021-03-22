@@ -120,6 +120,8 @@ namespace Three_project
             //9. 입력
             WriteLine("******************************************");
             WriteLine("9. 입력");
+            string input1 = ReadLine();
+            WriteLine("Input : " + input1);
             WriteLine("");
 
 
