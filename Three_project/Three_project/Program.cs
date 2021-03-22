@@ -82,8 +82,9 @@ namespace Three_project
             WriteLine(number5);     //50            
 
             WriteLine("");
-            WriteLine("******************************************");
 
+            //7. 자료형 검사 > GetType() 이용
+            WriteLine("******************************************");            
             WriteLine("");
             WriteLine("7. 자료형 검사 -> GetType()메서드 이용");
             WriteLine("");
@@ -101,6 +102,27 @@ namespace Three_project
             WriteLine(d.GetType());
             WriteLine(c.GetType());
             WriteLine(str.GetType());
+
+            WriteLine("");
+
+
+            //8. var키워드
+            WriteLine("******************************************");
+            WriteLine("");
+
+            WriteLine("8. var키워드");
+            var numberA = 100;
+            var numberB = 100L;
+            var numberC = 100.13;
+            var numberD = 100.15F;
+            WriteLine("");
+
+            //9. 입력
+            WriteLine("******************************************");
+            WriteLine("9. 입력");
+            WriteLine("");
+
+
 
 
 
