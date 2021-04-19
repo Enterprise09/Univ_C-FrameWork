@@ -216,7 +216,7 @@ namespace Fifth_project_1
 
 
                 //원한은 크기의 배열 생성 방법
-                int[] intArr = new int[100];
+            int[] intArr = new int[100];
             WriteLine(intArr[0]);
             WriteLine(intArr[99]);
 
