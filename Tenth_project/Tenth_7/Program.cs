@@ -34,6 +34,7 @@ namespace Tenth_7
             WriteLine(product4.id + " : " + product4.name + " : " + product4.price + "원");
             WriteLine(product5.id + " : " + product5.name + " : " + product5.price + "원");
             WriteLine(Product.counter + "개 생성되었습니다.");
+            WriteLine("Github Contribute Test");
         }
     }
 }
