@@ -7,7 +7,11 @@ namespace Property_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MyClass myClass = new MyClass();
+            myClass.SetMyField(3);
+            WriteLine(myClass.GetMyField());
+
+            /*Read();*/
         }
     }
 }
