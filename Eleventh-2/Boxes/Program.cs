@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace Boxes
 {
@@ -6,7 +7,8 @@ namespace Boxes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BoxA boxA = new BoxA(10, 10);
+            WriteLine(boxA.Area());
         }
     }
 }

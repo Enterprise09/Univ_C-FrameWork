@@ -8,5 +8,18 @@ namespace Boxes
 {
     class BoxA
     {
+        public int width, height;
+
+        public BoxA(int width, int height)
+        {
+            this.width = width;
+            this.height = height;
+        }
+
+        public int Area()
+        {
+            return width * height;
+        }
+
     }
 }
