@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace Property_3
 {
@@ -6,7 +7,9 @@ namespace Property_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MyClass myClass = new MyClass();
+            myClass.MyField = 2;
+            WriteLine(myClass.MyField);
         }
     }
 }
