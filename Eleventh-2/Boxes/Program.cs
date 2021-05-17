@@ -18,10 +18,14 @@ namespace Boxes
 
             BoxC boxC = new BoxC(10, 10);
             WriteLine(boxC.Area());
-            */
+            
 
             BoxD boxD = new BoxD(10, 10);
             WriteLine(boxD.Area());
+            */
+
+            BoxE boxE = new BoxE(10, 10);
+            WriteLine(boxE.Area());
 
 
         }
