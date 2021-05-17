@@ -10,6 +10,7 @@ namespace Property_3
     {
         //간단한 속성 생성 방법 - 자동 구현 속성 (프로퍼티)
         private int myField;
+
         public int MyField
         {
             get;

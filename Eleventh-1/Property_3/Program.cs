@@ -10,6 +10,7 @@ namespace Property_3
             MyClass myClass = new MyClass();
             myClass.MyField = 2;
             WriteLine(myClass.MyField);
+
         }
     }
 }
