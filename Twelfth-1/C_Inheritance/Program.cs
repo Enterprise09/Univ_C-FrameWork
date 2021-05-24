@@ -51,10 +51,16 @@ namespace C_Inheritance
                 {
                     ((Cat)item).Meow();
                 }
-                /*var a = (int)10.5;
-                var b = (float)10.5;
-                WriteLine(a);
-                WriteLine(b);*/
+
+                //Using as Keyword
+                if(item is Dog) { (item as Dog).Bark(); }
+                if(item is Cat) { (item as Cat).Meow(); }
+
+                var dog = item as Dog;
+                if(dog != null) { dog.Bark(); }
+
+                var cat = item as Cat;
+                if(cat != null) { cat.Meow(); }
             }
         }
     }
