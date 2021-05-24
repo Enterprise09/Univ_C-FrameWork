@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Inheritance", "C_Inherita
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D_Inheritance", "D_Inheritance\D_Inheritance.csproj", "{D7CCB9EF-3C06-4619-9E5F-1FE8FBC6BE3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowAndHide", "ShadowAndHide\ShadowAndHide.csproj", "{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D7CCB9EF-3C06-4619-9E5F-1FE8FBC6BE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7CCB9EF-3C06-4619-9E5F-1FE8FBC6BE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7CCB9EF-3C06-4619-9E5F-1FE8FBC6BE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
