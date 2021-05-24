@@ -6,7 +6,7 @@ namespace Hidding
 {
     class Animal
     {
-        public void Eat()
+        public virtual void Eat()
         {
             WriteLine("Animals Eat");
         }
@@ -14,7 +14,7 @@ namespace Hidding
 
     class Dog : Animal
     {
-        public void Eat()
+        public override void Eat()
         {
             WriteLine("Dog Eat");
         }
@@ -22,7 +22,7 @@ namespace Hidding
 
     class Cat : Animal
     {
-        public void Eat()
+        public override void Eat()
         {
             WriteLine("Cat Eat");
         }
