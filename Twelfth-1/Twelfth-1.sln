@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D_Inheritance", "D_Inherita
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowAndHide", "ShadowAndHide\ShadowAndHide.csproj", "{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hidding", "Hidding\Hidding.csproj", "{D300EFA6-7362-4F43-A522-EB024B0B8716}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF952E2B-FE46-4E12-8713-F958C2BCEFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D300EFA6-7362-4F43-A522-EB024B0B8716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D300EFA6-7362-4F43-A522-EB024B0B8716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D300EFA6-7362-4F43-A522-EB024B0B8716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D300EFA6-7362-4F43-A522-EB024B0B8716}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
