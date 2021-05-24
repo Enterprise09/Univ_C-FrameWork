@@ -43,14 +43,14 @@ namespace C_Inheritance
                 item.Eat();
                 item.Sleep();               
 
-                if (item is Dog)
+                /*if (item is Dog)
                 {
                     ((Dog)item).Bark();
                 }
                 if(item is Cat)
                 {
                     ((Cat)item).Meow();
-                }
+                }*/
 
                 //Using as Keyword
                 if(item is Dog) { (item as Dog).Bark(); }
