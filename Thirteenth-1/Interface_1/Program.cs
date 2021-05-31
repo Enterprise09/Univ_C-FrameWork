@@ -14,8 +14,8 @@ namespace Interface_1
 
             public int CompareTo(object obj)
             {
-                //return this.Price.CompareTo((obj as Product).Price);
-                return this.Name.CompareTo((obj as Product).Name);
+                //return this.Price.CompareTo((obj as Product).Price);  //Sorting by Price
+                return this.Name.CompareTo((obj as Product).Name);      //Sorting by Name
             }
 
             public override string ToString()
