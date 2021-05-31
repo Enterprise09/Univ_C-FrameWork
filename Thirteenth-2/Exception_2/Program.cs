@@ -15,9 +15,9 @@ namespace Exception_2
                     WriteLine(arr[i]);
                 }
             }
-            catch
+            catch(IndexOutOfRangeException e)
             {
-                WriteLine("종료");
+                WriteLine($"예외가 발생했습니다. : { e.Message}");
             }
 
             //시험문제 테스트
