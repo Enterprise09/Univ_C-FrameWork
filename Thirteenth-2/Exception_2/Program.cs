@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace Exception_2
 {
@@ -6,7 +7,13 @@ namespace Exception_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] arr = { 1, 2, 3 };
+            for(int i = 0; i < 3; i++)
+            {
+                WriteLine(arr[i]);
+            }
+
+            WriteLine("종료");
         }
     }
 }
