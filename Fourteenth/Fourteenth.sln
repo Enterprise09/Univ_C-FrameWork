@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCallback", "UsingCallb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anony", "Anony\Anony.csproj", "{F15D4142-0F11-4E8B-AA66-10B71731F546}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event", "Event\Event.csproj", "{8C430280-4BE6-4F73-BD50-21E2C3B9B405}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F15D4142-0F11-4E8B-AA66-10B71731F546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F15D4142-0F11-4E8B-AA66-10B71731F546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F15D4142-0F11-4E8B-AA66-10B71731F546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C430280-4BE6-4F73-BD50-21E2C3B9B405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C430280-4BE6-4F73-BD50-21E2C3B9B405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C430280-4BE6-4F73-BD50-21E2C3B9B405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C430280-4BE6-4F73-BD50-21E2C3B9B405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
