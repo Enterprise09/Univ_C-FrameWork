@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "Delegate\Delega
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCallback", "UsingCallback\UsingCallback.csproj", "{4E85FC4D-84F3-4790-9241-53DDDDF459C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anony", "Anony\Anony.csproj", "{F15D4142-0F11-4E8B-AA66-10B71731F546}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4E85FC4D-84F3-4790-9241-53DDDDF459C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E85FC4D-84F3-4790-9241-53DDDDF459C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E85FC4D-84F3-4790-9241-53DDDDF459C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15D4142-0F11-4E8B-AA66-10B71731F546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15D4142-0F11-4E8B-AA66-10B71731F546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15D4142-0F11-4E8B-AA66-10B71731F546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15D4142-0F11-4E8B-AA66-10B71731F546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

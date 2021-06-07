@@ -5,7 +5,7 @@ namespace UsingCallback
     delegate int Compare(int a, int b);
     class Program
     {
-        //
+        //오름차순 정리
         static int AscendCompare(int a, int b)
         {
             if (a > b)
@@ -16,6 +16,7 @@ namespace UsingCallback
                 return -1;
         }
 
+        //내림차순 정리
         static int DescendCompare(int a, int b)
         {
             if (a < b)
