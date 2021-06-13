@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace UsingCallback
 {
@@ -51,16 +52,37 @@ namespace UsingCallback
         {
             int[] array1 = { 3, 7, 4, 2, 10 };
             Console.WriteLine("Sorting ascending...");
-            BubbleSort(array1, new Compare(AscendCompare));
+            //콜백 메소드 이용
+            //BubbleSort(array1, new Compare(AscendCompare));
 
+            //무명 메소드 이용
+            BubbleSort(array1, delegate(int a, int b) {
+                if (a > b)
+                    return 1;
+                else if (a == b)
+                    return 0;
+                else
+                    return -1;
+            });
             for (int i = 0; i < array1.Length; i++)
                 Console.Write($"{array1[i]} ");
             Console.WriteLine();
 
             int[] array2 = { 7, 2, 8, 10, 11 };
             Console.WriteLine("\nSorting descending...");
+            //콜백 메소드 이용
             BubbleSort(array2, new Compare(DescendCompare));
 
+            //무명 메소드 이용
+            BubbleSort(array2, delegate(int a, int b)
+            {
+                if (a < b)
+                    return 1;
+                else if (a == b)
+                    return 0;
+                else
+                    return -1;
+            });
             for (int i = 0; i < array2.Length; i++)
                 Console.Write($"{array2[i]} ");
         }

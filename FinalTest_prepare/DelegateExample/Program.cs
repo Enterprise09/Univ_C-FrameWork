@@ -28,8 +28,14 @@ namespace DelegateExample
             Calc calc;
 
             //4. set function direction
-            calc = new Calc(myClass.plus);
-            WriteLine(calc(3, 4));
+            //calc = new Calc(myClass.plus);      //Delegate Callback Method 
+            //calc = (int a, int b) => a + b;     //Lambda
+
+            //WriteLine(calc(3, 4));
+            WriteLine(delegate ()
+            {
+                WriteLine("DoSomething");
+            });
         }
     }
 }
