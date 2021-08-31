@@ -53,6 +53,7 @@ namespace B_TextView
             this.txtEdit.Name = "txtEdit";
             this.txtEdit.Size = new System.Drawing.Size(353, 23);
             this.txtEdit.TabIndex = 1;
+            this.txtEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdit_KeyPress);
             // 
             // lblResult
             // 

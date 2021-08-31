@@ -35,5 +35,17 @@ namespace B_TextView
                 this.lblResult.Text = OrgStr + this.txtEdit.Text;
             }
         }
+
+        private void txtEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)13)
+            {
+                e.Handled = true;
+                if(TextCheck() == true)
+                {
+                    this.lblResult.Text = OrgStr + this.txtEdit.Text;
+                }
+            }
+        }
     }
 }
