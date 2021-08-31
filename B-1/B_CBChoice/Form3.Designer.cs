@@ -47,7 +47,8 @@ namespace B_CBChoice
             // 
             // txtList
             // 
-            this.txtList.Location = new System.Drawing.Point(200, 33);
+            this.txtList.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtList.Location = new System.Drawing.Point(206, 33);
             this.txtList.Name = "txtList";
             this.txtList.Size = new System.Drawing.Size(121, 23);
             this.txtList.TabIndex = 1;
@@ -55,12 +56,15 @@ namespace B_CBChoice
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(327, 33);
+            this.btnAdd.BackColor = System.Drawing.Color.LightCoral;
+            this.btnAdd.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(333, 33);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "추가";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblResult
