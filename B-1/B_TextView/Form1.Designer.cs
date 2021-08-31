@@ -36,13 +36,16 @@ namespace B_TextView
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnEdit.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.ForeColor = System.Drawing.Color.Red;
             this.btnEdit.Location = new System.Drawing.Point(549, 76);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 0;
             this.btnEdit.Text = "입력";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.button1_Click);
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // txtEdit
             // 
@@ -59,7 +62,6 @@ namespace B_TextView
             this.lblResult.Size = new System.Drawing.Size(42, 15);
             this.lblResult.TabIndex = 2;
             this.lblResult.Text = "결과 : ";
-            this.lblResult.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 

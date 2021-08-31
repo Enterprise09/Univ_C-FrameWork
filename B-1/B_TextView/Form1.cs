@@ -10,19 +10,30 @@ namespace B_TextView
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        string OrgStr = "";
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            OrgStr = this.lblResult.Text;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private bool TextCheck()
         {
+            if (this.txtEdit.Text != "") return true;
+            else
+            {
+                MessageBox.Show("텍스트를 입력하세요!", "알림", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.txtEdit.Focus();
+                return false;
+            }
+        }
 
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if(TextCheck() == true)
+            {
+                this.lblResult.Text = OrgStr + this.txtEdit.Text;
+            }
         }
     }
 }
