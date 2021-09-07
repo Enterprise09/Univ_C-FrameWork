@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_ListBox", "B_ListBox\B_Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_ListView", "B_ListView\B_ListView.csproj", "{CF610A18-36AC-475B-913E-026137C28505}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_Image", "B_Image\B_Image.csproj", "{C2AB785B-95EF-4522-AEA7-071B80B8C78E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CF610A18-36AC-475B-913E-026137C28505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF610A18-36AC-475B-913E-026137C28505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF610A18-36AC-475B-913E-026137C28505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2AB785B-95EF-4522-AEA7-071B80B8C78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2AB785B-95EF-4522-AEA7-071B80B8C78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2AB785B-95EF-4522-AEA7-071B80B8C78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2AB785B-95EF-4522-AEA7-071B80B8C78E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
