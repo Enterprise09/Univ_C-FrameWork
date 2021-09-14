@@ -31,11 +31,11 @@ namespace B_FontControl
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.tlsMenu = new System.Windows.Forms.ToolStrip();
+            this.tsBtnFont = new System.Windows.Forms.ToolStripButton();
+            this.tsBtnColor = new System.Windows.Forms.ToolStripButton();
             this.fontDlg = new System.Windows.Forms.FontDialog();
             this.colorDlg = new System.Windows.Forms.ColorDialog();
             this.rtbText = new System.Windows.Forms.RichTextBox();
-            this.tsBtnFont = new System.Windows.Forms.ToolStripButton();
-            this.tsBtnColor = new System.Windows.Forms.ToolStripButton();
             this.tlsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,15 +49,6 @@ namespace B_FontControl
             this.tlsMenu.Size = new System.Drawing.Size(800, 25);
             this.tlsMenu.TabIndex = 0;
             this.tlsMenu.Text = "toolStrip1";
-            // 
-            // rtbText
-            // 
-            this.rtbText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbText.Location = new System.Drawing.Point(0, 25);
-            this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(800, 425);
-            this.rtbText.TabIndex = 1;
-            this.rtbText.Text = "";
             // 
             // tsBtnFont
             // 
@@ -78,6 +69,15 @@ namespace B_FontControl
             this.tsBtnColor.Size = new System.Drawing.Size(23, 22);
             this.tsBtnColor.Text = "toolStripButton1";
             this.tsBtnColor.Click += new System.EventHandler(this.tsBtnColor_Click);
+            // 
+            // rtbText
+            // 
+            this.rtbText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbText.Location = new System.Drawing.Point(0, 25);
+            this.rtbText.Name = "rtbText";
+            this.rtbText.Size = new System.Drawing.Size(800, 425);
+            this.rtbText.TabIndex = 1;
+            this.rtbText.Text = "";
             // 
             // Form3
             // 
