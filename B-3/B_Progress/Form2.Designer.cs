@@ -34,6 +34,7 @@ namespace B_Progress
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnRun = new System.Windows.Forms.Button();
             this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.btnReturn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pbStaus
@@ -55,7 +56,7 @@ namespace B_Progress
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(194, 53);
+            this.btnRun.Location = new System.Drawing.Point(113, 50);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 2;
@@ -67,11 +68,22 @@ namespace B_Progress
             // 
             this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Location = new System.Drawing.Point(194, 50);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(75, 23);
+            this.btnReturn.TabIndex = 3;
+            this.btnReturn.Text = "초기화";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 85);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.pbStaus);
@@ -91,6 +103,7 @@ namespace B_Progress
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.Button btnReturn;
     }
 }
 

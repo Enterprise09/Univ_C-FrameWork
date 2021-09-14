@@ -41,5 +41,13 @@ namespace B_Progress
             this.pbStaus.Value = Num;
             this.lblStatus.Text = OrgStr + " : " + Num.ToString() + "%";
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            Num = 0;
+            this.pbStaus.Value = Num;
+            this.lblStatus.Text = "상태";
+            this.Timer.Enabled = false;
+        }
     }
 }
