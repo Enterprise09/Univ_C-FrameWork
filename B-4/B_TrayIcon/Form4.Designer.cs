@@ -30,6 +30,7 @@ namespace B_TrayIcon
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.btnTray = new System.Windows.Forms.Button();
             this.nfiTray = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmsMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -40,7 +41,7 @@ namespace B_TrayIcon
             // 
             // btnTray
             // 
-            this.btnTray.Location = new System.Drawing.Point(0, 0);
+            this.btnTray.Location = new System.Drawing.Point(246, 32);
             this.btnTray.Name = "btnTray";
             this.btnTray.Size = new System.Drawing.Size(91, 23);
             this.btnTray.TabIndex = 0;
@@ -51,6 +52,7 @@ namespace B_TrayIcon
             // nfiTray
             // 
             this.nfiTray.ContextMenuStrip = this.cmsMenu;
+            this.nfiTray.Icon = ((System.Drawing.Icon)(resources.GetObject("nfiTray.Icon")));
             this.nfiTray.Text = "트레이 아이콘";
             this.nfiTray.Visible = true;
             this.nfiTray.DoubleClick += new System.EventHandler(this.nfiTray_DoubleClick);
@@ -61,27 +63,27 @@ namespace B_TrayIcon
             this.폼보이기toolStripMenuItem,
             this.종료toolStripMenuItem});
             this.cmsMenu.Name = "cmsMenu";
-            this.cmsMenu.Size = new System.Drawing.Size(183, 48);
+            this.cmsMenu.Size = new System.Drawing.Size(123, 48);
             // 
             // 폼보이기toolStripMenuItem
             // 
             this.폼보이기toolStripMenuItem.Name = "폼보이기toolStripMenuItem";
-            this.폼보이기toolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.폼보이기toolStripMenuItem.Text = "toolStripMenuItem1";
+            this.폼보이기toolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.폼보이기toolStripMenuItem.Text = "폼보이기";
             this.폼보이기toolStripMenuItem.Click += new System.EventHandler(this.폼보이기toolStripMenuItem_Click);
             // 
             // 종료toolStripMenuItem
             // 
             this.종료toolStripMenuItem.Name = "종료toolStripMenuItem";
-            this.종료toolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.종료toolStripMenuItem.Text = "toolStripMenuItem1";
+            this.종료toolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.종료toolStripMenuItem.Text = "종료";
             this.종료toolStripMenuItem.Click += new System.EventHandler(this.종료toolStripMenuItem_Click);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(359, 200);
             this.Controls.Add(this.btnTray);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
