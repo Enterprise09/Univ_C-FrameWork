@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_FormView", "B_FormView\B_FormView.csproj", "{D177C823-2814-4074-803A-D6F594C7F771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B_FormView", "B_FormView\B_FormView.csproj", "{D177C823-2814-4074-803A-D6F594C7F771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_TrayIcon", "B_TrayIcon\B_TrayIcon.csproj", "{E3A7734B-FE62-4862-BA3C-C7B46BC3E3A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D177C823-2814-4074-803A-D6F594C7F771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D177C823-2814-4074-803A-D6F594C7F771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D177C823-2814-4074-803A-D6F594C7F771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A7734B-FE62-4862-BA3C-C7B46BC3E3A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A7734B-FE62-4862-BA3C-C7B46BC3E3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A7734B-FE62-4862-BA3C-C7B46BC3E3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A7734B-FE62-4862-BA3C-C7B46BC3E3A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
