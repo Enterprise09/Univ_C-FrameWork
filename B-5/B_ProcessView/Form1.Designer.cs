@@ -29,13 +29,130 @@ namespace B_ProcessView
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lvView = new System.Windows.Forms.ListView();
+            this.chName = new System.Windows.Forms.ColumnHeader();
+            this.chPid = new System.Windows.Forms.ColumnHeader();
+            this.chTime = new System.Windows.Forms.ColumnHeader();
+            this.chMemory = new System.Windows.Forms.ColumnHeader();
+            this.btnKill = new System.Windows.Forms.Button();
+            this.ssBar = new System.Windows.Forms.StatusStrip();
+            this.tsslProcess = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslCpu = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslMem = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ssBar.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // lvView
+            // 
+            this.lvView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chName,
+            this.chPid,
+            this.chTime,
+            this.chMemory});
+            this.lvView.FullRowSelect = true;
+            this.lvView.GridLines = true;
+            this.lvView.HideSelection = false;
+            this.lvView.Location = new System.Drawing.Point(0, 0);
+            this.lvView.Name = "lvView";
+            this.lvView.Size = new System.Drawing.Size(661, 253);
+            this.lvView.TabIndex = 0;
+            this.lvView.UseCompatibleStateImageBehavior = false;
+            this.lvView.View = System.Windows.Forms.View.Details;
+            // 
+            // chName
+            // 
+            this.chName.Text = "프로세스 이름";
+            this.chName.Width = 180;
+            // 
+            // chPid
+            // 
+            this.chPid.Text = "PID";
+            this.chPid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // chTime
+            // 
+            this.chTime.Text = "Time";
+            this.chTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chTime.Width = 90;
+            // 
+            // chMemory
+            // 
+            this.chMemory.Text = "메모리 사용";
+            this.chMemory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.chMemory.Width = 100;
+            // 
+            // btnKill
+            // 
+            this.btnKill.Location = new System.Drawing.Point(533, 315);
+            this.btnKill.Name = "btnKill";
+            this.btnKill.Size = new System.Drawing.Size(128, 23);
+            this.btnKill.TabIndex = 1;
+            this.btnKill.Text = "프로세스 끝내기";
+            this.btnKill.UseVisualStyleBackColor = true;
+            this.btnKill.Click += new System.EventHandler(this.btnKill_Click);
+            // 
+            // ssBar
+            // 
+            this.ssBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslProcess,
+            this.tsslCpu,
+            this.tsslMem});
+            this.ssBar.Location = new System.Drawing.Point(0, 341);
+            this.ssBar.Name = "ssBar";
+            this.ssBar.Size = new System.Drawing.Size(661, 22);
+            this.ssBar.TabIndex = 2;
+            this.ssBar.Text = "statusStrip1";
+            // 
+            // tsslProcess
+            // 
+            this.tsslProcess.Name = "tsslProcess";
+            this.tsslProcess.Size = new System.Drawing.Size(85, 17);
+            this.tsslProcess.Text = "프로세스 : 0개";
+            // 
+            // tsslCpu
+            // 
+            this.tsslCpu.Name = "tsslCpu";
+            this.tsslCpu.Size = new System.Drawing.Size(86, 17);
+            this.tsslCpu.Text = "CPU 사용 : 0%";
+            // 
+            // tsslMem
+            // 
+            this.tsslMem.Name = "tsslMem";
+            this.tsslMem.Size = new System.Drawing.Size(99, 17);
+            this.tsslMem.Text = "실제 메모리 : 0%";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(661, 363);
+            this.Controls.Add(this.ssBar);
+            this.Controls.Add(this.btnKill);
+            this.Controls.Add(this.lvView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "Form1";
+            this.Text = "프로세스 보기";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ssBar.ResumeLayout(false);
+            this.ssBar.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListView lvView;
+        private System.Windows.Forms.ColumnHeader chName;
+        private System.Windows.Forms.ColumnHeader chPid;
+        private System.Windows.Forms.ColumnHeader chTime;
+        private System.Windows.Forms.ColumnHeader chMemory;
+        private System.Windows.Forms.Button btnKill;
+        private System.Windows.Forms.StatusStrip ssBar;
+        private System.Windows.Forms.ToolStripStatusLabel tsslProcess;
+        private System.Windows.Forms.ToolStripStatusLabel tsslCpu;
+        private System.Windows.Forms.ToolStripStatusLabel tsslMem;
     }
 }
 
