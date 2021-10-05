@@ -19,7 +19,9 @@ namespace B_TrayMsg
 
         private void btnMsg_Click(object sender, EventArgs e)
         {
-
+            Form2 frm2 = new Form2();
+            frm2.MsgText = this.txtMsg.Text;
+            frm2.ShowDialog();
         }
     }
 }

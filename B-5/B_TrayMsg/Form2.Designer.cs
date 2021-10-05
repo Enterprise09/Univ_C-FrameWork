@@ -48,13 +48,14 @@ namespace B_TrayMsg
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(51, 37);
+            this.lblResult.Location = new System.Drawing.Point(65, 53);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(31, 15);
             this.lblResult.TabIndex = 0;
             this.lblResult.TabStop = true;
             this.lblResult.Text = "결과";
             this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResult.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblResult_LinkClicked);
             // 
             // Form2
             // 
@@ -68,6 +69,7 @@ namespace B_TrayMsg
             this.ShowInTaskbar = false;
             this.Text = "메시지 창";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.plBack.ResumeLayout(false);
             this.plBack.PerformLayout();
             this.ResumeLayout(false);
