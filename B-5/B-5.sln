@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_TrayMsg", "B_TrayMsg\B_TrayMsg.csproj", "{36EFF4D5-4698-491D-9AA3-1F7CF96D1639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B_TrayMsg", "B_TrayMsg\B_TrayMsg.csproj", "{36EFF4D5-4698-491D-9AA3-1F7CF96D1639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_ProcessView", "B_ProcessView\B_ProcessView.csproj", "{0EC09FB9-0503-4AEB-8F6C-4D8B9E97DEEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{36EFF4D5-4698-491D-9AA3-1F7CF96D1639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36EFF4D5-4698-491D-9AA3-1F7CF96D1639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36EFF4D5-4698-491D-9AA3-1F7CF96D1639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC09FB9-0503-4AEB-8F6C-4D8B9E97DEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC09FB9-0503-4AEB-8F6C-4D8B9E97DEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC09FB9-0503-4AEB-8F6C-4D8B9E97DEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC09FB9-0503-4AEB-8F6C-4D8B9E97DEEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
