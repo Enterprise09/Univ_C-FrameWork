@@ -35,14 +35,16 @@ namespace B_TrayMsg
             // 
             // txtMsg
             // 
-            this.txtMsg.Location = new System.Drawing.Point(0, 0);
+            this.txtMsg.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtMsg.Location = new System.Drawing.Point(12, 24);
             this.txtMsg.Name = "txtMsg";
-            this.txtMsg.Size = new System.Drawing.Size(100, 23);
+            this.txtMsg.Size = new System.Drawing.Size(286, 29);
             this.txtMsg.TabIndex = 0;
             // 
             // btnMsg
             // 
-            this.btnMsg.Location = new System.Drawing.Point(12, 29);
+            this.btnMsg.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMsg.Location = new System.Drawing.Point(106, 72);
             this.btnMsg.Name = "btnMsg";
             this.btnMsg.Size = new System.Drawing.Size(75, 23);
             this.btnMsg.TabIndex = 1;
@@ -54,7 +56,7 @@ namespace B_TrayMsg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(310, 114);
             this.Controls.Add(this.btnMsg);
             this.Controls.Add(this.txtMsg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
