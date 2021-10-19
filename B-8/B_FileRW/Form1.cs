@@ -72,6 +72,7 @@ namespace B_FileRW
                     while((line = sr.ReadLine()) != null)
                     {
                         this.txtRView.AppendText(line + "\r\n");
+                        //no bugs just use readLine()
                     }
                 }
             }
