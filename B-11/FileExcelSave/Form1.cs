@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using Excel = Microsoft.Office.Interop.Excel;
+using Excel = Microsoft.Office.Interop.Excel;   //get Excel com
 
 namespace FileExcelSave
 {
@@ -19,10 +19,10 @@ namespace FileExcelSave
             InitializeComponent();
         }
 
-        FileInfo fileInfo = null;
-        string filePath = "";
+        FileInfo fileInfo = null;   //file info 
+        string filePath = "";       
 
-        private void btnPath_Click(object sender, EventArgs e)
+        private void btnPath_Click(object sender, EventArgs e)  //select file with dialog
         {
             if(this.ofdFile.ShowDialog() == DialogResult.OK)
             {
@@ -41,7 +41,7 @@ namespace FileExcelSave
             }
         }
 
-        private string GetFileSize(double byteCount)
+        private string GetFileSize(double byteCount)    //calculate file size
         {
             string size = "0 Bytes";
             if(byteCount >= 1073741824.0)
@@ -61,14 +61,14 @@ namespace FileExcelSave
             return size;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)  //save file with selected type
         {
-            if(this.lvFile.Items.Count == 0)
+            if(this.lvFile.Items.Count == 0)    //no select file
             {
                 MessageBox.Show("저장할 파일 정보가 없습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (this.rbText.Checked == true)
+            if (this.rbText.Checked == true)    //select txt file
             {
                 this.sfdFile.Filter = "텍스트 파일(*.txt) | *.txt";
                 if(this.sfdFile.ShowDialog() == DialogResult.OK)
@@ -77,8 +77,8 @@ namespace FileExcelSave
                     TxtSave();
                 }
             }
-            else
-            {
+            else    //select excel file
+            { 
                 this.sfdFile.Filter = "엑셀 파일(*.xlsx) | *.xlsx";
                 if(this.sfdFile.ShowDialog() == DialogResult.OK)
                 {
@@ -88,17 +88,17 @@ namespace FileExcelSave
             }
         }
 
-        private void ExcelSave()
+        private void ExcelSave()    //save type of excel file
         {
             Excel.Application eApp;
             Excel.Workbook eWorkbook;
-            Excel.Worksheet eWorksheet;
+            Excel.Worksheet eWorksheet;     
 
             string[,] data;
 
-            eApp = new Excel.Application();
-            eWorkbook = eApp.Workbooks.Add(true);
-            eWorksheet = (Excel.Worksheet)eWorkbook.Sheets[1];
+            eApp = new Excel.Application();                     //get excel app
+            eWorkbook = eApp.Workbooks.Add(true);               //get workbooks
+            eWorksheet = (Excel.Worksheet)eWorkbook.Sheets[1];  //get excel worksheet
 
             int rowNum = this.lvFile.Items.Count + 1;
             int colNum = 5;
@@ -119,13 +119,15 @@ namespace FileExcelSave
             }
             string endStr = "E" + rowNum.ToString();
             eWorksheet.get_Range("A1 : " + endStr).Value2 = data;
+
+            //save file .xsml
             eWorkbook.SaveAs2(filePath, Excel.XlFileFormat.xlWorkbookDefault, Type.Missing,
                 Type.Missing, false, false, Excel.XlSaveAsAccessMode.xlShared, false, false, Type.Missing, Type.Missing);
             eWorkbook.Close(false, Type.Missing, Type.Missing);
             eApp.Quit();
         }
 
-        private void TxtSave()
+        private void TxtSave()  //save file type of .txt
         {
             using(StreamWriter sw = new StreamWriter(filePath))
             {
