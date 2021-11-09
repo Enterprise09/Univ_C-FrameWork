@@ -32,16 +32,16 @@ namespace FileExcelSave
             this.btnPath = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.gbSave = new System.Windows.Forms.GroupBox();
-            this.rbText = new System.Windows.Forms.RadioButton();
             this.rbExcel = new System.Windows.Forms.RadioButton();
+            this.rbText = new System.Windows.Forms.RadioButton();
             this.lvFile = new System.Windows.Forms.ListView();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.chName = new System.Windows.Forms.ColumnHeader();
             this.chDate = new System.Windows.Forms.ColumnHeader();
             this.chType = new System.Windows.Forms.ColumnHeader();
             this.chSize = new System.Windows.Forms.ColumnHeader();
             this.chPath = new System.Windows.Forms.ColumnHeader();
+            this.ofdFile = new System.Windows.Forms.OpenFileDialog();
+            this.sfdFile = new System.Windows.Forms.SaveFileDialog();
             this.gbSave.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,7 @@ namespace FileExcelSave
             this.btnPath.TabIndex = 0;
             this.btnPath.Text = "파일";
             this.btnPath.UseVisualStyleBackColor = true;
+            this.btnPath.Click += new System.EventHandler(this.btnPath_Click);
             // 
             // btnSave
             // 
@@ -62,6 +63,7 @@ namespace FileExcelSave
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "저장";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // gbSave
             // 
@@ -75,17 +77,6 @@ namespace FileExcelSave
             this.gbSave.TabStop = false;
             this.gbSave.Text = "파일 저장";
             // 
-            // rbText
-            // 
-            this.rbText.AutoSize = true;
-            this.rbText.Location = new System.Drawing.Point(24, 26);
-            this.rbText.Name = "rbText";
-            this.rbText.Size = new System.Drawing.Size(44, 19);
-            this.rbText.TabIndex = 0;
-            this.rbText.TabStop = true;
-            this.rbText.Text = "TXT";
-            this.rbText.UseVisualStyleBackColor = true;
-            // 
             // rbExcel
             // 
             this.rbExcel.AutoSize = true;
@@ -96,6 +87,17 @@ namespace FileExcelSave
             this.rbExcel.TabStop = true;
             this.rbExcel.Text = "EXCEL";
             this.rbExcel.UseVisualStyleBackColor = true;
+            // 
+            // rbText
+            // 
+            this.rbText.AutoSize = true;
+            this.rbText.Location = new System.Drawing.Point(24, 26);
+            this.rbText.Name = "rbText";
+            this.rbText.Size = new System.Drawing.Size(44, 19);
+            this.rbText.TabIndex = 0;
+            this.rbText.TabStop = true;
+            this.rbText.Text = "TXT";
+            this.rbText.UseVisualStyleBackColor = true;
             // 
             // lvFile
             // 
@@ -114,10 +116,6 @@ namespace FileExcelSave
             this.lvFile.TabIndex = 3;
             this.lvFile.UseCompatibleStateImageBehavior = false;
             this.lvFile.View = System.Windows.Forms.View.Details;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // chName
             // 
@@ -143,6 +141,12 @@ namespace FileExcelSave
             // 
             this.chPath.Text = "경로";
             this.chPath.Width = 250;
+            // 
+            // ofdFile
+            // 
+            this.ofdFile.FileName = "openFileDialog1";
+            this.ofdFile.Filter = "모든 파일(*.*)|*.*";
+            this.ofdFile.Multiselect = true;
             // 
             // Form1
             // 
@@ -170,8 +174,8 @@ namespace FileExcelSave
         private System.Windows.Forms.RadioButton rbExcel;
         private System.Windows.Forms.RadioButton rbText;
         private System.Windows.Forms.ListView lvFile;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog ofdFile;
+        private System.Windows.Forms.SaveFileDialog sfdFile;
         private System.Windows.Forms.ColumnHeader chName;
         private System.Windows.Forms.ColumnHeader chDate;
         private System.Windows.Forms.ColumnHeader chType;
