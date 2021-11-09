@@ -71,11 +71,12 @@ namespace B_Notepad
                 }
                 else if (dlr == DialogResult.Cancel)
                 {
-                    return; //저장 및 열기 하지 않고 모든 작업을 취소한다. } } else
-                    {
-                        textOpen(); // [txtNote] 컨트롤의 입력 데이터가 수정 및 추가 되지 않았다. 
-                    }
+                    return; //저장 및 열기 하지 않고 모든 작업을 취소한다.
                 }
+            }
+            else
+            {
+                textOpen();
             }
         }
 
@@ -110,15 +111,56 @@ namespace B_Notepad
 
         private void 찾기FtoolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(!(frm2 == null || !frm2.Visible)) { frm2.Focus(); return; }
+            if(!(frm2 == null || !frm2.Visible)) { 
+                frm2.Focus(); 
+                return; 
+            }
+
             frm2 = new Form2();
-            if (this.txtNote.SelectionLength == 0) { frm2.txtWord.Text = this.fWord; }
-            else
-            { frm2.txtWord.Text = this.txtNote.SelectedText; }
-            frm2.btnOk.Click += new System.EventHandler(this.btnOk_Click); frm2.Show();
+
+            if (this.txtNote.SelectionLength == 0) { 
+                frm2.txtWord.Text = this.fWord; 
+            }
+            else{ 
+                frm2.txtWord.Text = this.txtNote.SelectedText; 
+            }
+            frm2.btnOk.Click += new System.EventHandler(this.btnOk_Click); 
+            frm2.Show();
         }
 
-        
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            var updown = -1;
+            var str = this.txtNote.Text; //본문 저장
+            var findWord = frm2.txtWord.Text; //찾을 문자열 저장
+            if (!frm2.chOption.Checked)
+            {
+                str = str.ToUpper(); //저장된 본문을 대문자로 변환
+                findWord = findWord.ToUpper();
+            }
+            if (frm2.rdb01.Checked)
+            {
+                if (this.txtNote.SelectionStart != 0)
+                {
+                    updown = str.LastIndexOf(findWord, this.txtNote.SelectionStart - 1);
+                }
+            }
+            else
+            {
+                updown = str.IndexOf(findWord, this.txtNote.SelectionStart +
+                                        this.txtNote.SelectionLength);
+            }
+            if (updown == -1)
+            {
+                MessageBox.Show("더 이상 찾는 문자열이 없습니다.", "메모장",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            this.txtNote.Select(updown, findWord.Length);
+            fWord = frm2.txtWord.Text;
+            this.txtNote.Focus();
+            this.txtNote.ScrollToCaret();
+        }
 
         private void 글꼴FtoolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -33,10 +33,5 @@ namespace B_Notepad
         {
             this.Close();
         }
-
-        private void btnOk_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

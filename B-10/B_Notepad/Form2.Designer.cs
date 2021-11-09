@@ -98,7 +98,6 @@ namespace B_Notepad
             this.btnOk.TabIndex = 5;
             this.btnOk.Text = "찾기";
             this.btnOk.UseVisualStyleBackColor = true;
-            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
@@ -150,12 +149,12 @@ namespace B_Notepad
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox chOption;
-        private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.GroupBox groupBox1;
         internal System.Windows.Forms.TextBox txtWord;
         internal System.Windows.Forms.RadioButton rdb01;
         internal System.Windows.Forms.RadioButton rdb02;
+        internal System.Windows.Forms.Button btnOk;
+        internal System.Windows.Forms.CheckBox chOption;
     }
 }
