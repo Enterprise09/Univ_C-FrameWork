@@ -16,5 +16,27 @@ namespace B_Notepad
         {
             InitializeComponent();
         }
+
+        private void txtWord_TextChanged(object sender, EventArgs e)
+        {
+            if(this.txtWord.Text == "")
+            {
+                this.btnOk.Enabled = false;
+            }
+            else
+            {
+                this.btnOk.Enabled = true;
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
